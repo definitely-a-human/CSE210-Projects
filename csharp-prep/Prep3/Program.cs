@@ -4,12 +4,8 @@ class Program
 {
     static void Main(string[] args)
     {
-       
-        Console.Write("Select a MAGIC number. ");
-        string magicInput = Console.ReadLine();
-        int magicNumber = int.Parse(magicInput);
-
-        Console.WriteLine(" ");
+        Random random = new Random();
+        int magicNumber = random.Next();
 
         int guess = 0;
         int count = 1;
